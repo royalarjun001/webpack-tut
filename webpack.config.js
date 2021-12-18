@@ -18,5 +18,9 @@ module.exports = {
      *  by default entry-point is src/index.js which can be changed to customfile
      *  as done below value.
      */
-    entry: './src/bootstrap.js'
+    entry: './src/bootstrap.js',
+
+    output: {
+        filename: 'client.min.js'
+    }
 }
