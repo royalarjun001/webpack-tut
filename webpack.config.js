@@ -24,6 +24,12 @@ module.exports = {
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'client.min.js'
+        filename: 'client.min.js',
+        publicPath: '/assests/'
+    },
+
+    devServer: {
+        port:3737,
+        static: path.join(__dirname, 'dist')
     }
 }
