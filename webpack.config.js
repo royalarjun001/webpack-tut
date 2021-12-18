@@ -7,4 +7,10 @@ module.exports = {
     //  we need to pass the --config mywebpack.js with the default webpack
     //  command other wise it will look for the default file name which is
     //  webpack.config.js
+
+    /**
+     *  development : - will produce the out put which could be used for debugging
+     *  production : - will create best possible code for production mode
+     */
+    mode: 'production'
 }
