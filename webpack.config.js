@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     //  this is configuration setting which will be now in used by
     //  web pack.
@@ -21,6 +23,7 @@ module.exports = {
     entry: './src/bootstrap.js',
 
     output: {
+        path: path.resolve(__dirname, 'dist'),
         filename: 'client.min.js'
     }
 }
