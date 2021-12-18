@@ -12,5 +12,11 @@ module.exports = {
      *  development : - will produce the out put which could be used for debugging
      *  production : - will create best possible code for production mode
      */
-    mode: 'production'
+    mode: 'production',
+
+    /**
+     *  by default entry-point is src/index.js which can be changed to customfile
+     *  as done below value.
+     */
+    entry: './src/bootstrap.js'
 }
