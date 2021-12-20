@@ -1,3 +1,3 @@
-import { WriteToDocument } from "./myCode";
+import { greetOnLoad } from "./myCode";
 
-WriteToDocument();
+greetOnLoad();

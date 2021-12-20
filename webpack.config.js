@@ -20,7 +20,7 @@ module.exports = {
      *  by default entry-point is src/index.js which can be changed to customfile
      *  as done below value.
      */
-    entry: './src/bootstrap.js',
+    entry: ['./src/bootstrap.js', './src/bootstrap1.js'],
 
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -30,6 +30,9 @@ module.exports = {
 
     devServer: {
         port:3737,
-        static: path.join(__dirname, 'dist')
+        static: path.join(__dirname, 'dist'),
+        devMiddleware: {
+            writeToDisk: false
+        }
     }
 }

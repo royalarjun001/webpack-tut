@@ -1,6 +1,6 @@
-export function greetOnLoad(){
+export function logOnLoad(){
     const [ bodyElement ] = document.getElementsByTagName('body');
     const greetingElement = document.createElement('div');
-    greetingElement.textContent = 'Hi welcome to Webpack dev practices setup';
+    greetingElement.textContent = 'this is from other bundle of code to be included';
     bodyElement.appendChild(greetingElement);
 };
